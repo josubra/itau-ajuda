@@ -1,0 +1,66 @@
+@import "../shared/variables.scss";
+
+.duvidas {
+    .grid-container{
+        margin: 0 auto;
+        width: 100%;
+        .blocos {
+            b{
+                font-weight: normal;
+                float: left;
+                font-size: 18px;
+            }
+            p{
+                line-height: 20px;
+                clear: both;
+                font-weight: bold;
+                font-size: 18px;
+                color: $second-color;
+            }
+            span{
+                color: #007AB7;
+                text-decoration: underline;
+                position: absolute;
+                bottom: 20px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            li{
+                float: left;
+                width: 205px;
+                height: 200px;
+                margin-right: 16px;
+                border-radius: 8px;
+                padding: 5px 17px 0 17px;
+                position: relative;
+                border: 1px solid #C8C8C8;
+                cursor: pointer;
+                background: none !important;
+                margin-bottom: 16px;
+                &:hover{
+                    border: 1px solid $primay-color;
+                }
+            }
+            h1 {
+                font-weight: normal;
+                margin-bottom: 22px;
+                width: 198px;
+                overflow: auto;
+                margin-left: 0px;
+            }
+            i{
+                margin-top: -3px;
+                float: right;
+                font-size: 32px;
+            }
+        }
+    }
+    .mais-duvidas{
+        color: #007AB7;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 20px;
+        clear: both;
+        cursor: pointer;
+    }
+}

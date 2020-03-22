@@ -1,0 +1,30 @@
+<div class="conteudo">
+  <section class="titulo">
+    <label [attr.tabindex]="0" for="app-duvidas">Como podemos te ajudar?</label>
+    <app-duvidas [attr.tabindex]="0"></app-duvidas>
+  </section>
+  <app-categorias></app-categorias>
+  <section class="outros-atendimentos">
+    <h1 [attr.tabindex]="0">outras formas de atendimento</h1>
+    <div [attr.tabindex]="0" aria-label="Enviar mensagem" class="box" (click)="redirecionarFuncao('mensagem')" (keydown)="redirecionarFuncao('mensagem')">
+      <img alt="envia sua mensagem" src="../assets/navegador.png">
+      <h2>envie sua mensagem</h2>
+      <span>Envie sua dúvida de forma simples e prática.</span>
+    </div>
+    <div [attr.tabindex]="0" aria-label="Conversar com um especialista" class="box" (click)="redirecionarFuncao('chat')" (keydown)="redirecionarFuncao('chat')">
+      <img alt="converse com um especialista" src="../assets/conversacao.png">
+      <h2>chat com especialistas</h2>
+      <span>Tire suas dúvidas agora mesmo.</span>
+    </div>
+    <div [attr.tabindex]="0" aria-label="Listar telefones" class="box" (click)="redirecionarFuncao('telefone')" (keydown)="redirecionarFuncao('telefone')">
+      <img alt="lista de telefones" src="../assets/fones-de-ouvido.png">
+      <h2>telefones</h2>
+      <span>Atendimento todos os dias. 24h por dia.</span>
+    </div>
+    <div [attr.tabindex]="0" aria-label="Procurar agências" class="box" (click)="redirecionarFuncao('agencia')" (keydown)="redirecionarFuncao('agencia')">
+      <img alt="endereço de nossas agências" src="../assets/banco.png">
+      <h2>agências</h2>
+      <span>Encontre a agência mais próxima de você.</span>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,17 @@
+<section class="duvidas">
+    <h1 [attr.tabindex]="0">dúvidas frequentes</h1>
+    <div class="grid-container">
+        <ul class="blocos">
+            <li [attr.tabindex]="0" *ngFor="let duvida of duvidas; let i = index" (click)="direcionarDuvida(duvida)"
+                (keydown)="direcionarDuvida(duvida)">
+                <h1>
+                    <b [innerHtml]="duvida.titulo"></b>
+                    <i aria-label="icone" class="material-icons">{{ duvida.icone }}</i>
+                </h1>
+                <p>{{ duvida.descricao }}</p>
+                <span>saiba mais</span>
+            </li>
+        </ul>
+    </div>
+    <h1 [attr.tabindex]="0" class="mais-duvidas" (click)="maisDuvidas()" (keydown)="maisDuvidas()">mais dúvidas</h1>
+</section>

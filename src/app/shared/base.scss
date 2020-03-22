@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+.material-icons{
+    font-size: 35px;
+    color: $primay-color;
+    float: left;
+}
+
+.conteudo{
+    font-family: $primary-font-family;
+}
+.titulo{
+    font-family: $primary-font-family;
+    font-size: 42px;
+    color: $primay-color;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-left: 10px;
+    li {
+        list-style: none;
+    }
+}
+
+section {
+    display: block;
+    margin-top: 15px;
+    clear: both;
+    overflow: hidden;
+    width: 1080px;
+    h1{
+        font-family: $primary-font-family;
+        font-size: 24px;
+        color: $second-color;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}

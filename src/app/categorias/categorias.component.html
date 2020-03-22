@@ -1,0 +1,10 @@
+<section class="categorias">
+    <h1 [attr.tabindex]="0">procure também por categorias</h1>
+    <div class="grid-container">
+        <div [attr.tabindex]="0" *ngFor="let categoria of categorias; let i = index" class="box-info"
+            (click)="direcionarCategoria(categoria)" (keydown)="direcionarCategoria(categoria)">
+            <i [attr.aria-label]="categoria.titulo" class="material-icons">{{ categoria.icone }}</i>
+            <h2>{{ categoria.titulo }}</h2>
+        </div>
+    </div>
+</section>
